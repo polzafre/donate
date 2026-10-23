@@ -135,7 +135,7 @@
             font-size: 12px;
             font-weight: 700;
             margin-bottom: 14px;
-            letter-spacing: 0.5px;
+            letter-spacing: 0.8px;
         }
         h1 {
             font-size: 30px;
@@ -146,7 +146,6 @@
         }
         h1 span { color: #00E676; }
         
-        /* УМЕНЬШЕННЫЙ ТЕКСТ ОПИСАНИЯ */
         p.subtitle {
             color: #8ea394;
             font-size: 12.5px;
@@ -156,7 +155,7 @@
             padding: 0 10px;
         }
 
-        /* БЛОКИ РАЗДЕЛЕНИЯ КАТЕГОРИЙ (РОССИЯ / ДРУГИЕ СТРАНЫ) */
+        /* РАЗДЕЛЫ КАТЕГОРИЙ */
         .category-box {
             margin-bottom: 18px;
         }
@@ -244,7 +243,7 @@
             flex-shrink: 0;
         }
 
-        /* 1. CloudTips (Основной яркий РФ) */
+        /* CloudTips */
         .btn-cloudtips {
             background: linear-gradient(135deg, #00E676 0%, #00B0FF 100%);
             color: #05140A;
@@ -263,7 +262,7 @@
             color: #05140A;
         }
 
-        /* 2. Ozon Банк */
+        /* Ozon Банк */
         .btn-ozon {
             background: rgba(0, 91, 255, 0.14);
             border: 1px solid rgba(0, 91, 255, 0.35);
@@ -284,7 +283,7 @@
             color: #6bb0ff;
         }
 
-        /* 3. ЮMoney */
+        /* ЮMoney */
         .btn-yoo {
             background: rgba(139, 44, 255, 0.12);
             border: 1px solid rgba(139, 44, 255, 0.32);
@@ -305,7 +304,28 @@
             color: #c77dff;
         }
 
-        /* 4. Boosty (Оранжевый) */
+        /* Telegram Tribute */
+        .btn-world {
+            background: rgba(36, 161, 222, 0.12);
+            border: 1px solid rgba(36, 161, 222, 0.32);
+            color: #ffffff;
+        }
+        .btn-world:hover {
+            background: rgba(36, 161, 222, 0.22);
+            border-color: #24A1DE;
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(36, 161, 222, 0.25);
+        }
+        .btn-world .icon-box {
+            background: #24A1DE;
+        }
+        .btn-world .icon-box svg { fill: #ffffff; }
+        .btn-world .badge-hint {
+            background: rgba(36, 161, 222, 0.25);
+            color: #7fd6ff;
+        }
+
+        /* Boosty */
         .btn-boosty {
             background: rgba(241, 95, 44, 0.13);
             border: 1px solid rgba(241, 95, 44, 0.35);
@@ -326,7 +346,7 @@
             color: #ff9d7d;
         }
 
-        /* 5. Lava.top (Кораллово-красный) */
+        /* Lava.top */
         .btn-lava {
             background: rgba(255, 75, 43, 0.13);
             border: 1px solid rgba(255, 75, 43, 0.35);
@@ -345,27 +365,6 @@
         .btn-lava .badge-hint {
             background: rgba(255, 75, 43, 0.3);
             color: #ffa392;
-        }
-
-        /* 6. Telegram Tribute (Голубой) */
-        .btn-world {
-            background: rgba(36, 161, 222, 0.12);
-            border: 1px solid rgba(36, 161, 222, 0.32);
-            color: #ffffff;
-        }
-        .btn-world:hover {
-            background: rgba(36, 161, 222, 0.22);
-            border-color: #24A1DE;
-            transform: translateY(-2px);
-            box-shadow: 0 6px 20px rgba(36, 161, 222, 0.25);
-        }
-        .btn-world .icon-box {
-            background: #24A1DE;
-        }
-        .btn-world .icon-box svg { fill: #ffffff; }
-        .btn-world .badge-hint {
-            background: rgba(36, 161, 222, 0.25);
-            color: #7fd6ff;
         }
 
         @media (max-width: 1140px) {
@@ -429,7 +428,7 @@
 
     <!-- ЦЕНТРАЛЬНЫЙ БЛОК ОПЛАТЫ -->
     <main class="container">
-        <div class="badge">DONATE & SUPPORT</div>
+        <div class="badge">DONATE</div>
         <h1>ПОДДЕРЖАТЬ <span>ПРОЕКТ</span></h1>
         <p class="subtitle">
             Polza IPTV остаётся бесплатным приложением без назойливой рекламы и скрытых подписок. Серверы и разработка существуют исключительно благодаря вашей добровольной помощи!
@@ -441,7 +440,7 @@
                 <div class="category-title">
                     <span>🇷🇺 Для зрителей из России</span>
                 </div>
-                <div class="category-desc">Карты РФ • СБП 0%</div>
+                <div class="category-desc">Карты РФ • СБП</div>
             </div>
 
             <div class="pay-grid">
@@ -470,7 +469,7 @@
                             <div class="text-desc">Прямой мгновенный перевод по СБП</div>
                         </div>
                     </div>
-                    <span class="badge-hint">СБП 0%</span>
+                    <span class="badge-hint">СБП</span>
                 </a>
 
                 <!-- ЮMoney -->
@@ -481,7 +480,7 @@
                         </div>
                         <div>
                             <div class="text-title">ЮMoney (Кошелек / Карта)</div>
-                            <div class="text-desc">Кошелек № 410016340126349</div>
+                            <div class="text-desc">Перевод с баланса или банковской карты</div>
                         </div>
                     </div>
                     <span class="badge-hint">КОШЕЛЕК</span>
@@ -499,7 +498,21 @@
             </div>
 
             <div class="pay-grid">
-                <!-- Boosty -->
+                <!-- 1. Telegram Tribute (В самом верху) -->
+                <a href="https://t.me/tribute/app?startapp=dzXC" target="_blank" class="btn-pay btn-world">
+                    <div class="left-side">
+                        <div class="icon-box">
+                            <svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z"/></svg>
+                        </div>
+                        <div>
+                            <div class="text-title">Telegram Tribute</div>
+                            <div class="text-desc">Быстрая оплата через бота Telegram</div>
+                        </div>
+                    </div>
+                    <span class="badge-hint">TELEGRAM</span>
+                </a>
+
+                <!-- 2. Boosty -->
                 <a href="https://boosty.to/polzatv/donate" target="_blank" class="btn-pay btn-boosty">
                     <div class="left-side">
                         <div class="icon-box">
@@ -513,7 +526,7 @@
                     <span class="badge-hint">КАРТЫ МИРА</span>
                 </a>
 
-                <!-- Lava.top -->
+                <!-- 3. Lava.top -->
                 <a href="https://app.lava.top/polzaiptv" target="_blank" class="btn-pay btn-lava">
                     <div class="left-side">
                         <div class="icon-box">
@@ -525,20 +538,6 @@
                         </div>
                     </div>
                     <span class="badge-hint">LAVA</span>
-                </a>
-
-                <!-- Telegram Tribute -->
-                <a href="https://t.me/tribute/app?startapp=dzXC" target="_blank" class="btn-pay btn-world">
-                    <div class="left-side">
-                        <div class="icon-box">
-                            <svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z"/></svg>
-                        </div>
-                        <div>
-                            <div class="text-title">Telegram Tribute</div>
-                            <div class="text-desc">Быстрая оплата через бота Telegram</div>
-                        </div>
-                    </div>
-                    <span class="badge-hint">TELEGRAM</span>
                 </a>
             </div>
         </div>
